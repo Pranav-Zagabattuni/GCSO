@@ -6,14 +6,14 @@ var deformation
 
 function setup() {
   createCanvas(800,400);
+    speed = random(55,90)
+  weight = random(400,1500)
   car = createSprite(40,200,38,38)
   car.shapeColor = color(255,255,255)
-  car.velocityX = 5
+  car.velocityX = speed
 
   wall = createSprite(650,200,30,height/2)
 
-  speed = random(55,90)
-  weight = random(400,1500)
   deformation = (0.5 * weight * speed * speed)/22500
 }
 
